@@ -1,4 +1,4 @@
-<base href="https://cdn.jsdelivr.net/gh/veryeducationing3/bobbert/">
+<base href="https://cdn.jsdelivr.net/gh/veryeducationing3/sobbert/">
 
 let createAzaharModuleFactoryPromise = null;
 let azaharRuntimeScriptPromise = null;
@@ -117,7 +117,7 @@ async function getCreateAzaharModule() {
     return window.createAzaharModule;
   }
   if (!createAzaharModuleFactoryPromise) {
-    const moduleUrl = "https://cdn.jsdelivr.net/gh/veryeducationing3/bobbert/Build/azahar_libretro.js";
+    const moduleUrl = "https://cdn.jsdelivr.net/gh/veryeducationing3/sobbert/Build/azahar_libretro.js";
     createAzaharModuleFactoryPromise = (async () => {
       const runtimeFormat = await detectAzaharRuntimeFormat(moduleUrl);
       if (runtimeFormat === "classic") {
