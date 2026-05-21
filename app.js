@@ -115,7 +115,7 @@ async function getCreateAzaharModule() {
     return window.createAzaharModule;
   }
   if (!createAzaharModuleFactoryPromise) {
-    const moduleUrl = new URL("./Build/azahar_libretro.js", window.location.href).href;
+    const moduleUrl = "/Build/azahar_libretro.js";
     createAzaharModuleFactoryPromise = (async () => {
       const runtimeFormat = await detectAzaharRuntimeFormat(moduleUrl);
       if (runtimeFormat === "classic") {
